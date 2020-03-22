@@ -5,6 +5,9 @@ module.exports = async (browser, context) => {
   await page.goto('https://www.gurucharan.in/speaking-engagements/');
   //await page.type('#username', 'admin');
   //await page.type('#password', 'password');
-  //await page.click('[type="submit"]');
-  //await page.waitForNavigation();
+  //await page.screenshot({ path: 'example.png' });
+  await Promise.all([
+    page.click('[type="submit"]'), 
+    page.waitForNavigation()]);
+  await page.close();
 };
