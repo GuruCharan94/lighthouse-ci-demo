@@ -2,7 +2,8 @@
   "name": "lhci",
   "version": "0.0.0",
   "scripts": {
-    "start": "lhci server --config=./lighthouserc.json"
+    "start": "lhci server --config=./lighthouserc.json",
+    "build": ""
   },
   "dependencies": {
     "@lhci/cli": "0.3.7",
